@@ -43,17 +43,40 @@ fi
 # Hub
 eval "$(hub alias -s)"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+alias getlocal=". ~/.local/*"
+
+alias aws=". ~/.local/aws.zendesk.epahl"
+alias awspac=". ~/.local/apacws.zendesk.epahl"
+alias kce=". ~/.local/knife.chef-epahl"
+alias kct=". ~/.local/knife.chef-training"
+alias kzd=". ~/.local/knife.chef1.sac1"
+
+alias knuff="nocorrect knife node update from file"
+
+alias awchef='. ~/.local/aws.zendesk.epahl && . ~/.local/knife.chef-epahl'
+alias chefpac='. ~/.local/apacws.zendesk.epahl && . ~/.local/knife.chefpac'
+alias 11chef='. ~/.local/aws.zendesk.epahl && . ~/.local/knife.chef11'
+alias zenchef='. ~/.local/aws.zendesk.epahl && . ~/.local/knife.chef1.sac1'
+alias zenchef2='. ~/.local/aws.zendesk.epahl && . ~/.local/knife.chef2.sac1'
+
+# fabops
+alias fochef='nocorrect fab -f ~/z/fabops/chef.py'
+
+# Disable autocorrect
+alias gem="nocorrect gem"
 
 alias reload=". ~/.zshrc"
+
 alias diff="colordiff -u"
-alias kel="knife ec2 server list"
+alias kel="knife ec2 server list --tags cookbook,created-by,Role"
 alias ked="knife ec2 server delete"
+#alias b="bundle exec"
 alias b="nocorrect bundle exec"
 alias be="nocorrect bundle exec"
 alias bv="nocorrect bundle exec vagrant"
 alias ghi="nocorrect ghi"
+
+alias reload_service="knife ssh 'zendesk_config_deploy_projects:$RELOAD_SERVICE AND zendesk_config_pod:$POD' -x root -C 7 -- sudo reload_services $RELOAD_SERVICE"
 
 alias kct="knife cookbook test -o ../../cookbooks"
 alias flushdns='sudo dscacheutil -flushcache'
@@ -78,3 +101,7 @@ alias ag="nocorrect ag"
 
 # Pretty print json
 alias json_pp="python -mjson.tool"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
