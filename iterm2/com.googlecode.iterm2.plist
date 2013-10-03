@@ -546,11 +546,17 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>815 658 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>47 417 570 451 0 0 1440 878 </string>
+	<string>48 425 570 451 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>63 427 570 451 0 0 1440 878 </string>
+	<string>2800 25 1200 871 2560 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>2560 449 570 451 2560 0 1440 900 </string>
+	<string>60 16 2494 1402 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>475 15 1662 1403 0 0 2560 1418 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>60 1 2488 876 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>60 10 2494 1408 0 0 2560 1418 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3434,6 +3440,8 @@
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PassOnControlClick</key>
 	<false/>
 	<key>PasteFromClipboard</key>
@@ -3488,7 +3496,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-04-05T00:43:22Z</date>
+	<date>2013-06-22T12:15:48Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
