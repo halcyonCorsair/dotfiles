@@ -10,9 +10,6 @@
 [submodule "resources/vim/jslint"]
 	path = resources/vim/jslint
 	url = git://github.com/hallettj/jslint.vim.git
-[submodule "resources/vim/zencoding-vim"]
-	path = resources/vim/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
 [submodule "resources/vim/jslint.vim"]
 	path = resources/vim/jslint.vim
 	url = git://github.com/hallettj/jslint.vim.git
