@@ -12,6 +12,7 @@ filetype plugin indent on
 
 syntax enable
 colorscheme solarized
+"colorscheme torte
 
 " I know this *seems* redundant, but I periodically change my
 if has('gui_running')
